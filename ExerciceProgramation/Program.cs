@@ -112,6 +112,66 @@
 
 #region 4. Suite de Fibonacci
 
+//Console.WriteLine(" veuillez saisir un chiffre");
+//var vrai = true;
+//int nbsaisie = 0;
+//while (vrai)
+//{
+
+//    string? saisie = Console.ReadLine();
+
+
+//    if (!string.IsNullOrEmpty(saisie))
+//    {
+//        try
+//        {
+
+
+//            nbsaisie = int.Parse(saisie);
+//            vrai = false;
+
+
+//        }
+//        catch (Exception)
+//        {
+
+//            Console.WriteLine("votre saisie n'est pas conforme veuillez resaissir un chiffre");
+//            vrai = true;
+//        }
+//    }
+//    else
+//    {
+//        Console.WriteLine("votre saisie n'est pas conforme veuillez resaissir un chiffre");
+//        vrai = true;
+//    }
+//};
+
+
+//int[] tab = new int[nbsaisie];
+//foreach (int item in tab)
+//{
+//    for (int i = nbsaisie - 1; i > -1; i--)
+//    {
+
+//        tab[i] = i;
+//    }
+
+//    for (int i = 0; i < tab.Length - 2; i++)
+//    {
+
+//        tab[i + 2] = tab[i + 1] + tab[i];
+
+//    }
+
+//    Console.WriteLine(item);
+//}
+
+//1h15
+
+#endregion
+
+#region 5. Factorielle
+
 Console.WriteLine(" veuillez saisir un chiffre");
 var vrai = true;
 int nbsaisie = 0;
@@ -148,24 +208,17 @@ while (vrai)
 
 
 int[] tab = new int[nbsaisie];
-foreach (int item in tab)
+
 {
-    for (int i = nbsaisie - 1; i > -1; i--)
+    var p = 1;
+    for (int i = 0; i < tab.Length; i++)
     {
-
-        tab[i] = i;
+        tab[i] = i+1;
+        p = tab[i]* p;
     }
-
-    for (int i = 0; i < tab.Length - 2; i++)
-    {
-
-        tab[i + 2] = tab[i + 1] + tab[i];
-
-    }
-
-    Console.WriteLine(item);
+   
+    Console.WriteLine( $"the result is {p}" );
 }
 
-1h15
 
 #endregion
