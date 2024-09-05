@@ -1,5 +1,5 @@
 ﻿
-#region 1- FizzBuzz  
+#region 1. FizzBuzz  
 //int[] nombre = new int[100];
 
 
@@ -96,7 +96,7 @@
 //{
 //    if (nbsaisie % i == 0)
 //    {
-        
+
 //        Console.WriteLine($"{nbsaisie} n'est pas nombre premier ");
 //        break;
 //    }
@@ -108,4 +108,64 @@
 //}
 
 //45 minut avec un tchek sur net 
+#endregion
+
+#region 4. Suite de Fibonacci
+
+Console.WriteLine(" veuillez saisir un chiffre");
+var vrai = true;
+int nbsaisie = 0;
+while (vrai)
+{
+
+    string? saisie = Console.ReadLine();
+
+
+    if (!string.IsNullOrEmpty(saisie))
+    {
+        try
+        {
+
+
+            nbsaisie = int.Parse(saisie);
+            vrai = false;
+
+
+        }
+        catch (Exception)
+        {
+
+            Console.WriteLine("votre saisie n'est pas conforme veuillez resaissir un chiffre");
+            vrai = true;
+        }
+    }
+    else
+    {
+        Console.WriteLine("votre saisie n'est pas conforme veuillez resaissir un chiffre");
+        vrai = true;
+    }
+};
+
+
+int[] tab = new int[nbsaisie];
+foreach (int item in tab)
+{
+    for (int i = nbsaisie - 1; i > -1; i--)
+    {
+
+        tab[i] = i;
+    }
+
+    for (int i = 0; i < tab.Length - 2; i++)
+    {
+
+        tab[i + 2] = tab[i + 1] + tab[i];
+
+    }
+
+    Console.WriteLine(item);
+}
+
+1h15
+
 #endregion
