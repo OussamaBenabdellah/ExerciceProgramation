@@ -1,4 +1,5 @@
-﻿
+﻿using ExerciceProgramation;
+
 #region 1. FizzBuzz  
 //int[] nombre = new int[100];
 
@@ -172,53 +173,62 @@
 
 #region 5. Factorielle
 
-Console.WriteLine(" veuillez saisir un chiffre");
-var vrai = true;
-int nbsaisie = 0;
-while (vrai)
-{
+//Console.WriteLine(" veuillez saisir un chiffre");
+//var vrai = true;
+//int nbsaisie = 0;
+//while (vrai)
+//{
 
-    string? saisie = Console.ReadLine();
-
-
-    if (!string.IsNullOrEmpty(saisie))
-    {
-        try
-        {
+//    string? saisie = Console.ReadLine();
 
 
-            nbsaisie = int.Parse(saisie);
-            vrai = false;
+//    if (!string.IsNullOrEmpty(saisie))
+//    {
+//        try
+//        {
 
 
-        }
-        catch (Exception)
-        {
-
-            Console.WriteLine("votre saisie n'est pas conforme veuillez resaissir un chiffre");
-            vrai = true;
-        }
-    }
-    else
-    {
-        Console.WriteLine("votre saisie n'est pas conforme veuillez resaissir un chiffre");
-        vrai = true;
-    }
-};
+//            nbsaisie = int.Parse(saisie);
+//            vrai = false;
 
 
-int[] tab = new int[nbsaisie];
+//        }
+//        catch (Exception)
+//        {
 
-{
-    var p = 1;
-    for (int i = 0; i < tab.Length; i++)
-    {
-        tab[i] = i+1;
-        p = tab[i]* p;
-    }
-   
-    Console.WriteLine( $"the result is {p}" );
-}
+//            Console.WriteLine("votre saisie n'est pas conforme veuillez resaissir un chiffre");
+//            vrai = true;
+//        }
+//    }
+//    else
+//    {
+//        Console.WriteLine("votre saisie n'est pas conforme veuillez resaissir un chiffre");
+//        vrai = true;
+//    }
+//};
 
 
+//int[] tab = new int[nbsaisie];
+
+//{
+//    var p = 1;
+//    for (int i = 0; i < tab.Length; i++)
+//    {
+//        tab[i] = i+1;
+//        p = tab[i]* p;
+//    }
+
+//    Console.WriteLine( $"the result is {p}" );
+//}
+
+
+#endregion
+
+#region Deuxieme plus grang nombre 
+
+var SecondeHighNumber = new SecondHightNumber();
+int[] tabele = [33,10, 22, 45,1,200,3];
+
+SecondeHighNumber.SecondNumber(tabele);
+Console.WriteLine(SecondeHighNumber.resulte);
 #endregion
