@@ -245,3 +245,14 @@ tabele.ViewSecond(Result);
 
 #endregion
 
+#region Reverse String
+
+var reverse = new ReversingString();
+
+Console.WriteLine("introduce your world");
+string? word = Console.ReadLine();
+
+ reverse.Reversing(word);
+
+//25min
+#endregion
