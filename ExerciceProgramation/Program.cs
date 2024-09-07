@@ -271,16 +271,32 @@
 #endregion
 
 #region addition of N first Nombres
-Console.WriteLine("enter you number");
-var number = Console.ReadLine();
+//Console.WriteLine("enter you number");
+//var number = Console.ReadLine();
 
-var numbers = int.Parse(number);
+//var numbers = int.Parse(number);
 
-var addition = new AdditionFirstNumber(); 
+//var addition = new AdditionFirstNumber(); 
 
-var result = addition.AdditionFirst(numbers);
+//var result = addition.AdditionFirst(numbers);
 
-Console.WriteLine(result);
+//Console.WriteLine(result);
 
 //16 min 
+#endregion
+
+#region Anagram
+Console.WriteLine("seizure your first world");
+var firstWorld = Console.ReadLine();
+
+Console.WriteLine("seizure your second world");
+var secondWorld = Console.ReadLine();
+
+var worlds = new Anagram();
+
+worlds.AnagramVerification(firstWorld, secondWorld);
+Console.WriteLine(worlds.result);
+
+//1h + 15 minut apres avoir vue la logic sur net 
+
 #endregion
