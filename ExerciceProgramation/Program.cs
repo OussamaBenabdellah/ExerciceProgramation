@@ -259,13 +259,26 @@
 
 #region Palindrome
 
-var reverse = new Palindrome();
+//var reverse = new Palindrome();
 
-Console.WriteLine("introduce your world");
-string? word = Console.ReadLine();
-Console.WriteLine("Palindrome world");
-reverse.Verification(word);
+//Console.WriteLine("introduce your world");
+//string? word = Console.ReadLine();
+//Console.WriteLine("Palindrome world");
+//reverse.Verification(word);
 
-//20 min
+////20 min
 
+#endregion
+
+#region addition of N first Nombres
+Console.WriteLine("enter you number");
+var number = Console.ReadLine();
+
+var numbers = int.Parse(number);
+
+var addition = new AdditionFirstNumber(); 
+
+var result = addition.AdditionFirst(numbers);
+
+Console.WriteLine(result);
 #endregion
