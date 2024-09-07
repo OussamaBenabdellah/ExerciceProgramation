@@ -226,9 +226,22 @@
 
 #region Deuxieme plus grang nombre 
 
-var SecondeHighNumber = new SecondHightNumber();
-int[] tabele = [33,10, 22, 45,1,200,3];
+//var SecondeHighNumber = new SecondHightNumber();
+//int[] tabele = [33, 10, 22, 45, 1, 200, 3];
 
-SecondeHighNumber.SecondNumber(tabele);
-Console.WriteLine(SecondeHighNumber.resulte);
+//SecondeHighNumber.SecondNumber(tabele);
+//Console.WriteLine(SecondeHighNumber.resulte);
 #endregion
+
+#region Find Second High Number
+
+int[] tab = { 33, 10, 22, 45, 1, 200, 3 };
+var tabele = new FindSecond();
+
+tabele.ViewTable(tab);
+var Result = tabele.SortFusion(tab);
+tabele.ViewTable(Result);
+tabele.ViewSecond(Result);
+
+#endregion
+
