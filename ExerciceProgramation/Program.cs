@@ -257,13 +257,15 @@
 ////25min
 #endregion
 
-#region MyRegion
+#region Palindrome
 
-var reverse = new ReversingString();
+var reverse = new Palindrome();
 
 Console.WriteLine("introduce your world");
 string? word = Console.ReadLine();
+Console.WriteLine("Palindrome world");
+reverse.Verification(word);
 
-reverse.Reversing(word);
+//20 min
 
 #endregion

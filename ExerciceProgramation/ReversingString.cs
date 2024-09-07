@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ExerciceProgramation
 {
-    internal class ReversingString
+    public class ReversingString
     {   
-        public void Reversing(string result)
+        public void Reversing(string world)
         {
-            char[] chars = result.ToCharArray();
+            char[] chars = world.ToCharArray();
             char[] charsInvers = new char[chars.Length];
             var i = 0;                 
                 for (int j = chars.Length-1; j >= 0; j--)
@@ -19,8 +19,8 @@ namespace ExerciceProgramation
                     i++;
                 }
 
-            var resu = new string (charsInvers);
-            Console.WriteLine(resu);         
+            var result = new string (charsInvers);
+            Console.WriteLine(result);         
         }
 
     }
