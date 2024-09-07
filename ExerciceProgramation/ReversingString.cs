@@ -11,19 +11,16 @@ namespace ExerciceProgramation
         public void Reversing(string result)
         {
             char[] chars = result.ToCharArray();
-            char[] c = new char[chars.Length];
-            for (int i = 0; i < chars.Length; i++)
-            {                 
+            char[] charsInvers = new char[chars.Length];
+            var i = 0;                 
                 for (int j = chars.Length-1; j >= 0; j--)
                 {
-                    c [i] = chars [j];
+                    charsInvers [i] = chars [j];
                     i++;
                 }
-            }
-            foreach (char item in c)
-            {
-                Console.Write(item + " ");
-            }          
+
+            var resu = new string (charsInvers);
+            Console.WriteLine(resu);         
         }
 
     }

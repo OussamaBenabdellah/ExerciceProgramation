@@ -235,24 +235,35 @@
 
 #region Find Second High Number
 
-int[] tab = { 33, 10, 22, 45, 1, 200, 3 };
-var tabele = new FindSecond();
+//int[] tab = { 33, 10, 22, 45, 1, 200, 3 };
+//var tabele = new FindSecond();
 
-tabele.ViewTable(tab);
-var Result = tabele.SortFusion(tab);
-tabele.ViewTable(Result);
-tabele.ViewSecond(Result);
+//tabele.ViewTable(tab);
+//var Result = tabele.SortFusion(tab);
+//tabele.ViewTable(Result);
+//tabele.ViewSecond(Result);
 
 #endregion
 
 #region Reverse String
+
+//var reverse = new ReversingString();
+
+//Console.WriteLine("introduce your world");
+//string? word = Console.ReadLine();
+
+// reverse.Reversing(word);
+
+////25min
+#endregion
+
+#region MyRegion
 
 var reverse = new ReversingString();
 
 Console.WriteLine("introduce your world");
 string? word = Console.ReadLine();
 
- reverse.Reversing(word);
+reverse.Reversing(word);
 
-//25min
 #endregion
