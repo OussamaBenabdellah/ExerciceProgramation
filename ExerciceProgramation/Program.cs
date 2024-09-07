@@ -281,4 +281,6 @@ var addition = new AdditionFirstNumber();
 var result = addition.AdditionFirst(numbers);
 
 Console.WriteLine(result);
+
+//16 min 
 #endregion
