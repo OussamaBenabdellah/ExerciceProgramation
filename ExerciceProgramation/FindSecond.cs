@@ -8,63 +8,6 @@ namespace ExerciceProgramation
 {
     public class FindSecond
     {
-        //public int[] SortFusion(int[] tab)
-        //{
-        //    if (tab.Length <= 1)
-        //        return tab;
-
-        //    int milieu = tab.Length / 2;
-        //    int[] gauche = new int[milieu];
-        //    int[] droite = new int[tab.Length - milieu];
-
-        //    Array.Copy(tab, 0, gauche, 0, milieu);
-        //    Array.Copy(tab, milieu, droite, 0, tab.Length - milieu);
-
-        //    gauche = SortFusion(gauche);
-        //    droite = SortFusion(droite);
-
-        //    return Fusion(gauche, droite);
-        //}
-
-        //public int[] Fusion(int[] gauche, int[] droite)
-        //{
-        //    int[] resultat = new int[gauche.Length + droite.Length];
-        //    int i = 0, j = 0, k = 0;
-
-        //    while (i < gauche.Length && j < droite.Length)
-        //    {
-        //        if (gauche[i] < droite[j])
-        //        {
-        //            resultat[k++] = gauche[i++];
-        //        }
-        //        else
-        //        {
-        //            resultat[k++] = droite[j++];
-        //        }
-        //    }
-
-        //    while (i < gauche.Length)
-        //    {
-        //        resultat[k++] = gauche[i++];
-        //    }
-
-        //    while (j < droite.Length)
-        //    {
-        //        resultat[k++] = droite[j++];
-        //    }
-
-        //    return resultat;
-        //}
-
-        //public void AfficherTableau(int[] tab)
-        //{
-        //    foreach (var item in tab)
-        //    {
-        //        Console.Write(item + " ");
-        //    }
-        //    Console.WriteLine();
-        //}
-
         public int[] SortFusion(int[] tab)
         {
             if (tab.Length <= 1)
